@@ -1,0 +1,34 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{mathtools}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{float}
+\setCJKmainfont{微軟正黑體}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\begin{document}
+\title{HW3\_Report}
+\author{林炫廷 111550087}
+\date{\today}
+\maketitle
+{\bf1. Which part of the module in simple-single-CPU is redundant? Can you design a new instruction to use this module?}\\
+{\bf Ans: }\\
+Zero\_Filled. We can design the following instruction to use this module.
+We take the data in register "rs" as the multiplicand, "rt" as the product, the 16-bit constant as the multiplier.
+To carry out this instruction using Booth's algorithm or traditional method, we need to use the "zero\_filled" module
+to extend 16-bit constant to 32-bit constant.
+\begin{center}
+    \begin{tabular}{|c|}
+        \hline
+        muli	\$rs, \$rt, 16\_bit constant \\
+        \hline
+    \end{tabular}
+\end{center}\par
+{\bf 2. Which instruction is redundant and why? }\\
+{\bf Ans: }\par
+bnez. We can achieve the same result by using the "bne" instruction and setting the register "rt" to "\$zero".
+This change allows us to obtain the identical solution.
+\end{document}

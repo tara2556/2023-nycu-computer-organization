@@ -1,0 +1,92 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{mathtools}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{float}
+\setCJKmainfont{微軟正黑體}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\begin{document}
+\title{HW4\_Report}
+\author{林炫廷 111550087}
+\date{\today}
+\maketitle
+{\bf 1. Describe the input ﬁelds of each pipeline register}\\
+{\bf Ans: }\\
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \hline
+        {\bf register} & {\bf input field}                              \\
+        \hline
+        IFID           & instruction                                    \\
+        \hline
+        IDEX           & 9 bit control signal(including 3 bits op code) \\
+                       & RSdata                                         \\
+                       & RTdata                                         \\
+                       & sign-extend                                    \\
+                       & rt                                             \\
+                       & rd                                             \\
+                       & shift amount                                   \\
+                       & function code                                  \\
+        \hline
+        EXMEM          & 4 bit control signal                           \\
+                       & result of ALU                                  \\
+                       & RTdata                                         \\
+                       & the destination of writeback                   \\
+        \hline
+        MEMWB          & the signal of MemToReg and RegWrite            \\
+                       & read data from data memory                     \\
+                       & RTdata                                         \\
+                       & the destination of writeback                   \\
+        \hline
+    \end{tabular}
+\end{center}
+\newpage
+{\bf 2. Explain your control signals in the sixth cycle(both test data test\_1.txt and test\_2.txt are needed)}\\
+{\bf Ans: }\par
+\begin{center}
+    \begin{tabular}{|c|c|}
+        \multicolumn{2}{c}{\bf Test1} \\
+        \hline
+        RegWrite & 0                  \\
+        \hline
+        ALUSrc   & 1                  \\
+        \hline
+        RegDst   & 0                  \\
+        \hline
+        ALUOp    & 010(RType)         \\
+        \hline
+        func     & 0000(and)          \\
+        \hline
+        MemWrite & 0                  \\
+        \hline
+        MemRead  & 0                  \\
+        \hline
+        MemToReg & 0                  \\
+        \hline
+    \end{tabular}
+    \begin{tabular}{|c|c|}
+        \multicolumn{2}{c}{\bf Test2} \\
+        \hline
+        RegWrite & 1                  \\
+        \hline
+        ALUSrc   & 1                  \\
+        \hline
+        RegDst   & 0                  \\
+        \hline
+        ALUOp    & 011(addi)          \\
+        \hline
+        func     & 0010(add)          \\
+        \hline
+        MemWrite & 0                  \\
+        \hline
+        MemRead  & 0                  \\
+        \hline
+        MemToReg & 0                  \\
+        \hline
+    \end{tabular}
+\end{center}
+\end{document}

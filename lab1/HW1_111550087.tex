@@ -1,0 +1,75 @@
+\documentclass[a4paper, 12pt]{article}
+\usepackage{fontspec}
+\usepackage{xeCJK}
+\usepackage{mathtools}
+\usepackage{tocloft}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{float}
+\setCJKmainfont{微軟正黑體}
+\XeTeXlinebreaklocale "zh"
+\XeTeXlinebreakskip = 0pt plus 1pt
+\begin{document}
+\title{HW1\_Report}
+\author{林炫廷 111550087}
+\date{\today}
+\maketitle
+{\bf1. What is the usage of \$zero? What happen if you execute?}\par
+\begin{center}
+    \begin{tabular}{|c|}
+        \hline
+        addi \$zero, \$zero, 5 \\
+        \hline
+    \end{tabular}
+\end{center}
+{\bf Ans: }\\
+{\it First.}\par
+1. This register could be a constant zero used in arithmetic and
+logical operation. Also, it is admitted to be considered as value zero in the instructions.\par
+2. It could be used for register initialization, making it easy to clear the variables and registers.\par
+3. It is commonly used in comparisons and branching. For example: {\sl bne} and {\sl beq}.\\
+{\it Second.}\par
+The register \$zero reserves the value zero. Unlike other general-purpose registers,
+you cannot modify the value of \$zero directly.
+Any attempt to write to \$zero is ignored, and it remains set to zero.
+As a result, this instruction does not affect register \$zero. and it retains its value of zero.
+\newpage
+{\bf 2. How to use the stack to ensure that the value of each register is correctly saved when executing a recursive function? }\\
+{\bf Ans: }\par
+After entering a function, we simply use stack to store the return address and other parameters.
+This allows us to obtain the correct parameters
+within the function layer and return to the correct line of code.
+The table below illustrates this process:
+\begin{center}
+    \begin{tabular}{|c|}
+        \hline
+        addi	\$sp, \$sp, -8 \\
+        \hline
+        sw		\$ra, 4(\$sp)   \\
+        \hline
+        sw		\$a0, 0(\$sp)   \\
+        \hline
+    \end{tabular}
+\end{center}\par
+By utilizing the stack,
+we maintain a hierarchical structure of function calls,
+ensuring the integrity of parameter passing and return
+addresses throughout the program execution.\\\par
+{\bf 3. What was the most challenging part for you in this homework? }\\
+{\bf Ans: }\par
+There are lots of obstacles that I have encountered while working on this homework assignment.
+The main chellenge I face is that MIPS code is quite abstract, making it diffcult to determine
+whether the program is prograssing correctly.
+To implement the for loop function in MIPS, I have searched through the class slide
+and gathering information from Internet.\par
+It is obvious that debugging
+the code is more challenging compared to highed-level languages.
+This is partically true when doing recursive functions.
+Despite carefully reading each line of code, I still struggle to identify why
+the program's output is consistently incorrect.
+Thus, I have resorted to closely observing the change in registers after executing each instruction.
+By employing this approach, I have been able to identify bugs wothin the complex program structure.\par
+Although it is not easy to solve these qusetion by using the unfamiliar language,
+It has signigicantly accelerated my famility with assembly language.
+I believe this homework is truly valuable in enhancing my understanding of this course.
+\end{document}

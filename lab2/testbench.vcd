@@ -1,0 +1,4035 @@
+$date
+	Sat Jul 22 09:27:33 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module Testbench $end
+$var wire 1 ! zero $end
+$var wire 32 " result_Shifter [31:0] $end
+$var wire 32 # result_ALU [31:0] $end
+$var wire 1 $ overflow $end
+$var parameter 2 % ADD $end
+$var parameter 2 & AND $end
+$var parameter 1 ' INVERT $end
+$var parameter 2 ( LESS $end
+$var parameter 2 ) OR $end
+$var parameter 1 * SHIFT_RIGHT $end
+$var reg 32 + A [31:0] $end
+$var reg 32 , B [31:0] $end
+$var reg 1 - CLK $end
+$var reg 32 . aluSrc1 [31:0] $end
+$var reg 32 / aluSrc2 [31:0] $end
+$var reg 68 0 inp [67:0] $end
+$var reg 1 1 invertA $end
+$var reg 1 2 invertB $end
+$var reg 1 3 leftRight $end
+$var reg 2 4 operation [1:0] $end
+$var reg 1 5 overflow_t $end
+$var reg 32 6 result [31:0] $end
+$var reg 32 7 sftSrc [31:0] $end
+$var reg 5 8 shamt [4:0] $end
+$var reg 1 9 zero_t $end
+$var integer 32 : i [31:0] $end
+$var integer 32 ; score [31:0] $end
+$scope module alu $end
+$var wire 32 < aluSrc1 [31:0] $end
+$var wire 32 = aluSrc2 [31:0] $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 2 > operation [1:0] $end
+$var wire 1 $ overflow $end
+$var wire 1 ! zero $end
+$var wire 33 ? temp [32:0] $end
+$var wire 32 @ result [31:0] $end
+$var wire 1 A addResult $end
+$scope module M0 $end
+$var wire 1 B a $end
+$var wire 1 C addResult $end
+$var wire 1 D b $end
+$var wire 1 2 carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 2 E operation [1:0] $end
+$var wire 1 F tempb $end
+$var wire 1 G tempa $end
+$var wire 1 H temp $end
+$var wire 1 A less $end
+$var wire 1 I carryOut $end
+$var reg 1 J result $end
+$scope module M0 $end
+$var wire 1 2 carryIn $end
+$var wire 1 I carryOut $end
+$var wire 1 G input1 $end
+$var wire 1 F input2 $end
+$var wire 1 H sum $end
+$var wire 1 K w1 $end
+$var wire 1 L w2 $end
+$var wire 1 M w3 $end
+$upscope $end
+$upscope $end
+$scope module M1 $end
+$var wire 1 N a $end
+$var wire 1 O addResult $end
+$var wire 1 P b $end
+$var wire 1 Q carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 R less $end
+$var wire 2 S operation [1:0] $end
+$var wire 1 T tempb $end
+$var wire 1 U tempa $end
+$var wire 1 V temp $end
+$var wire 1 W carryOut $end
+$var reg 1 X result $end
+$scope module M0 $end
+$var wire 1 Q carryIn $end
+$var wire 1 W carryOut $end
+$var wire 1 U input1 $end
+$var wire 1 T input2 $end
+$var wire 1 V sum $end
+$var wire 1 Y w1 $end
+$var wire 1 Z w2 $end
+$var wire 1 [ w3 $end
+$upscope $end
+$upscope $end
+$scope module M10 $end
+$var wire 1 \ a $end
+$var wire 1 ] addResult $end
+$var wire 1 ^ b $end
+$var wire 1 _ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 ` less $end
+$var wire 2 a operation [1:0] $end
+$var wire 1 b tempb $end
+$var wire 1 c tempa $end
+$var wire 1 d temp $end
+$var wire 1 e carryOut $end
+$var reg 1 f result $end
+$scope module M0 $end
+$var wire 1 _ carryIn $end
+$var wire 1 e carryOut $end
+$var wire 1 c input1 $end
+$var wire 1 b input2 $end
+$var wire 1 d sum $end
+$var wire 1 g w1 $end
+$var wire 1 h w2 $end
+$var wire 1 i w3 $end
+$upscope $end
+$upscope $end
+$scope module M11 $end
+$var wire 1 j a $end
+$var wire 1 k addResult $end
+$var wire 1 l b $end
+$var wire 1 m carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 n less $end
+$var wire 2 o operation [1:0] $end
+$var wire 1 p tempb $end
+$var wire 1 q tempa $end
+$var wire 1 r temp $end
+$var wire 1 s carryOut $end
+$var reg 1 t result $end
+$scope module M0 $end
+$var wire 1 m carryIn $end
+$var wire 1 s carryOut $end
+$var wire 1 q input1 $end
+$var wire 1 p input2 $end
+$var wire 1 r sum $end
+$var wire 1 u w1 $end
+$var wire 1 v w2 $end
+$var wire 1 w w3 $end
+$upscope $end
+$upscope $end
+$scope module M12 $end
+$var wire 1 x a $end
+$var wire 1 y addResult $end
+$var wire 1 z b $end
+$var wire 1 { carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 | less $end
+$var wire 2 } operation [1:0] $end
+$var wire 1 ~ tempb $end
+$var wire 1 !" tempa $end
+$var wire 1 "" temp $end
+$var wire 1 #" carryOut $end
+$var reg 1 $" result $end
+$scope module M0 $end
+$var wire 1 { carryIn $end
+$var wire 1 #" carryOut $end
+$var wire 1 !" input1 $end
+$var wire 1 ~ input2 $end
+$var wire 1 "" sum $end
+$var wire 1 %" w1 $end
+$var wire 1 &" w2 $end
+$var wire 1 '" w3 $end
+$upscope $end
+$upscope $end
+$scope module M13 $end
+$var wire 1 (" a $end
+$var wire 1 )" addResult $end
+$var wire 1 *" b $end
+$var wire 1 +" carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 ," less $end
+$var wire 2 -" operation [1:0] $end
+$var wire 1 ." tempb $end
+$var wire 1 /" tempa $end
+$var wire 1 0" temp $end
+$var wire 1 1" carryOut $end
+$var reg 1 2" result $end
+$scope module M0 $end
+$var wire 1 +" carryIn $end
+$var wire 1 1" carryOut $end
+$var wire 1 /" input1 $end
+$var wire 1 ." input2 $end
+$var wire 1 0" sum $end
+$var wire 1 3" w1 $end
+$var wire 1 4" w2 $end
+$var wire 1 5" w3 $end
+$upscope $end
+$upscope $end
+$scope module M14 $end
+$var wire 1 6" a $end
+$var wire 1 7" addResult $end
+$var wire 1 8" b $end
+$var wire 1 9" carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 :" less $end
+$var wire 2 ;" operation [1:0] $end
+$var wire 1 <" tempb $end
+$var wire 1 =" tempa $end
+$var wire 1 >" temp $end
+$var wire 1 ?" carryOut $end
+$var reg 1 @" result $end
+$scope module M0 $end
+$var wire 1 9" carryIn $end
+$var wire 1 ?" carryOut $end
+$var wire 1 =" input1 $end
+$var wire 1 <" input2 $end
+$var wire 1 >" sum $end
+$var wire 1 A" w1 $end
+$var wire 1 B" w2 $end
+$var wire 1 C" w3 $end
+$upscope $end
+$upscope $end
+$scope module M15 $end
+$var wire 1 D" a $end
+$var wire 1 E" addResult $end
+$var wire 1 F" b $end
+$var wire 1 G" carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 H" less $end
+$var wire 2 I" operation [1:0] $end
+$var wire 1 J" tempb $end
+$var wire 1 K" tempa $end
+$var wire 1 L" temp $end
+$var wire 1 M" carryOut $end
+$var reg 1 N" result $end
+$scope module M0 $end
+$var wire 1 G" carryIn $end
+$var wire 1 M" carryOut $end
+$var wire 1 K" input1 $end
+$var wire 1 J" input2 $end
+$var wire 1 L" sum $end
+$var wire 1 O" w1 $end
+$var wire 1 P" w2 $end
+$var wire 1 Q" w3 $end
+$upscope $end
+$upscope $end
+$scope module M16 $end
+$var wire 1 R" a $end
+$var wire 1 S" addResult $end
+$var wire 1 T" b $end
+$var wire 1 U" carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 V" less $end
+$var wire 2 W" operation [1:0] $end
+$var wire 1 X" tempb $end
+$var wire 1 Y" tempa $end
+$var wire 1 Z" temp $end
+$var wire 1 [" carryOut $end
+$var reg 1 \" result $end
+$scope module M0 $end
+$var wire 1 U" carryIn $end
+$var wire 1 [" carryOut $end
+$var wire 1 Y" input1 $end
+$var wire 1 X" input2 $end
+$var wire 1 Z" sum $end
+$var wire 1 ]" w1 $end
+$var wire 1 ^" w2 $end
+$var wire 1 _" w3 $end
+$upscope $end
+$upscope $end
+$scope module M17 $end
+$var wire 1 `" a $end
+$var wire 1 a" addResult $end
+$var wire 1 b" b $end
+$var wire 1 c" carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 d" less $end
+$var wire 2 e" operation [1:0] $end
+$var wire 1 f" tempb $end
+$var wire 1 g" tempa $end
+$var wire 1 h" temp $end
+$var wire 1 i" carryOut $end
+$var reg 1 j" result $end
+$scope module M0 $end
+$var wire 1 c" carryIn $end
+$var wire 1 i" carryOut $end
+$var wire 1 g" input1 $end
+$var wire 1 f" input2 $end
+$var wire 1 h" sum $end
+$var wire 1 k" w1 $end
+$var wire 1 l" w2 $end
+$var wire 1 m" w3 $end
+$upscope $end
+$upscope $end
+$scope module M18 $end
+$var wire 1 n" a $end
+$var wire 1 o" addResult $end
+$var wire 1 p" b $end
+$var wire 1 q" carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 r" less $end
+$var wire 2 s" operation [1:0] $end
+$var wire 1 t" tempb $end
+$var wire 1 u" tempa $end
+$var wire 1 v" temp $end
+$var wire 1 w" carryOut $end
+$var reg 1 x" result $end
+$scope module M0 $end
+$var wire 1 q" carryIn $end
+$var wire 1 w" carryOut $end
+$var wire 1 u" input1 $end
+$var wire 1 t" input2 $end
+$var wire 1 v" sum $end
+$var wire 1 y" w1 $end
+$var wire 1 z" w2 $end
+$var wire 1 {" w3 $end
+$upscope $end
+$upscope $end
+$scope module M19 $end
+$var wire 1 |" a $end
+$var wire 1 }" addResult $end
+$var wire 1 ~" b $end
+$var wire 1 !# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 "# less $end
+$var wire 2 ## operation [1:0] $end
+$var wire 1 $# tempb $end
+$var wire 1 %# tempa $end
+$var wire 1 &# temp $end
+$var wire 1 '# carryOut $end
+$var reg 1 (# result $end
+$scope module M0 $end
+$var wire 1 !# carryIn $end
+$var wire 1 '# carryOut $end
+$var wire 1 %# input1 $end
+$var wire 1 $# input2 $end
+$var wire 1 &# sum $end
+$var wire 1 )# w1 $end
+$var wire 1 *# w2 $end
+$var wire 1 +# w3 $end
+$upscope $end
+$upscope $end
+$scope module M2 $end
+$var wire 1 ,# a $end
+$var wire 1 -# addResult $end
+$var wire 1 .# b $end
+$var wire 1 /# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 0# less $end
+$var wire 2 1# operation [1:0] $end
+$var wire 1 2# tempb $end
+$var wire 1 3# tempa $end
+$var wire 1 4# temp $end
+$var wire 1 5# carryOut $end
+$var reg 1 6# result $end
+$scope module M0 $end
+$var wire 1 /# carryIn $end
+$var wire 1 5# carryOut $end
+$var wire 1 3# input1 $end
+$var wire 1 2# input2 $end
+$var wire 1 4# sum $end
+$var wire 1 7# w1 $end
+$var wire 1 8# w2 $end
+$var wire 1 9# w3 $end
+$upscope $end
+$upscope $end
+$scope module M20 $end
+$var wire 1 :# a $end
+$var wire 1 ;# addResult $end
+$var wire 1 <# b $end
+$var wire 1 =# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 ># less $end
+$var wire 2 ?# operation [1:0] $end
+$var wire 1 @# tempb $end
+$var wire 1 A# tempa $end
+$var wire 1 B# temp $end
+$var wire 1 C# carryOut $end
+$var reg 1 D# result $end
+$scope module M0 $end
+$var wire 1 =# carryIn $end
+$var wire 1 C# carryOut $end
+$var wire 1 A# input1 $end
+$var wire 1 @# input2 $end
+$var wire 1 B# sum $end
+$var wire 1 E# w1 $end
+$var wire 1 F# w2 $end
+$var wire 1 G# w3 $end
+$upscope $end
+$upscope $end
+$scope module M21 $end
+$var wire 1 H# a $end
+$var wire 1 I# addResult $end
+$var wire 1 J# b $end
+$var wire 1 K# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 L# less $end
+$var wire 2 M# operation [1:0] $end
+$var wire 1 N# tempb $end
+$var wire 1 O# tempa $end
+$var wire 1 P# temp $end
+$var wire 1 Q# carryOut $end
+$var reg 1 R# result $end
+$scope module M0 $end
+$var wire 1 K# carryIn $end
+$var wire 1 Q# carryOut $end
+$var wire 1 O# input1 $end
+$var wire 1 N# input2 $end
+$var wire 1 P# sum $end
+$var wire 1 S# w1 $end
+$var wire 1 T# w2 $end
+$var wire 1 U# w3 $end
+$upscope $end
+$upscope $end
+$scope module M22 $end
+$var wire 1 V# a $end
+$var wire 1 W# addResult $end
+$var wire 1 X# b $end
+$var wire 1 Y# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 Z# less $end
+$var wire 2 [# operation [1:0] $end
+$var wire 1 \# tempb $end
+$var wire 1 ]# tempa $end
+$var wire 1 ^# temp $end
+$var wire 1 _# carryOut $end
+$var reg 1 `# result $end
+$scope module M0 $end
+$var wire 1 Y# carryIn $end
+$var wire 1 _# carryOut $end
+$var wire 1 ]# input1 $end
+$var wire 1 \# input2 $end
+$var wire 1 ^# sum $end
+$var wire 1 a# w1 $end
+$var wire 1 b# w2 $end
+$var wire 1 c# w3 $end
+$upscope $end
+$upscope $end
+$scope module M23 $end
+$var wire 1 d# a $end
+$var wire 1 e# addResult $end
+$var wire 1 f# b $end
+$var wire 1 g# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 h# less $end
+$var wire 2 i# operation [1:0] $end
+$var wire 1 j# tempb $end
+$var wire 1 k# tempa $end
+$var wire 1 l# temp $end
+$var wire 1 m# carryOut $end
+$var reg 1 n# result $end
+$scope module M0 $end
+$var wire 1 g# carryIn $end
+$var wire 1 m# carryOut $end
+$var wire 1 k# input1 $end
+$var wire 1 j# input2 $end
+$var wire 1 l# sum $end
+$var wire 1 o# w1 $end
+$var wire 1 p# w2 $end
+$var wire 1 q# w3 $end
+$upscope $end
+$upscope $end
+$scope module M24 $end
+$var wire 1 r# a $end
+$var wire 1 s# addResult $end
+$var wire 1 t# b $end
+$var wire 1 u# carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 v# less $end
+$var wire 2 w# operation [1:0] $end
+$var wire 1 x# tempb $end
+$var wire 1 y# tempa $end
+$var wire 1 z# temp $end
+$var wire 1 {# carryOut $end
+$var reg 1 |# result $end
+$scope module M0 $end
+$var wire 1 u# carryIn $end
+$var wire 1 {# carryOut $end
+$var wire 1 y# input1 $end
+$var wire 1 x# input2 $end
+$var wire 1 z# sum $end
+$var wire 1 }# w1 $end
+$var wire 1 ~# w2 $end
+$var wire 1 !$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M25 $end
+$var wire 1 "$ a $end
+$var wire 1 #$ addResult $end
+$var wire 1 $$ b $end
+$var wire 1 %$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 &$ less $end
+$var wire 2 '$ operation [1:0] $end
+$var wire 1 ($ tempb $end
+$var wire 1 )$ tempa $end
+$var wire 1 *$ temp $end
+$var wire 1 +$ carryOut $end
+$var reg 1 ,$ result $end
+$scope module M0 $end
+$var wire 1 %$ carryIn $end
+$var wire 1 +$ carryOut $end
+$var wire 1 )$ input1 $end
+$var wire 1 ($ input2 $end
+$var wire 1 *$ sum $end
+$var wire 1 -$ w1 $end
+$var wire 1 .$ w2 $end
+$var wire 1 /$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M26 $end
+$var wire 1 0$ a $end
+$var wire 1 1$ addResult $end
+$var wire 1 2$ b $end
+$var wire 1 3$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 4$ less $end
+$var wire 2 5$ operation [1:0] $end
+$var wire 1 6$ tempb $end
+$var wire 1 7$ tempa $end
+$var wire 1 8$ temp $end
+$var wire 1 9$ carryOut $end
+$var reg 1 :$ result $end
+$scope module M0 $end
+$var wire 1 3$ carryIn $end
+$var wire 1 9$ carryOut $end
+$var wire 1 7$ input1 $end
+$var wire 1 6$ input2 $end
+$var wire 1 8$ sum $end
+$var wire 1 ;$ w1 $end
+$var wire 1 <$ w2 $end
+$var wire 1 =$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M27 $end
+$var wire 1 >$ a $end
+$var wire 1 ?$ addResult $end
+$var wire 1 @$ b $end
+$var wire 1 A$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 B$ less $end
+$var wire 2 C$ operation [1:0] $end
+$var wire 1 D$ tempb $end
+$var wire 1 E$ tempa $end
+$var wire 1 F$ temp $end
+$var wire 1 G$ carryOut $end
+$var reg 1 H$ result $end
+$scope module M0 $end
+$var wire 1 A$ carryIn $end
+$var wire 1 G$ carryOut $end
+$var wire 1 E$ input1 $end
+$var wire 1 D$ input2 $end
+$var wire 1 F$ sum $end
+$var wire 1 I$ w1 $end
+$var wire 1 J$ w2 $end
+$var wire 1 K$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M28 $end
+$var wire 1 L$ a $end
+$var wire 1 M$ addResult $end
+$var wire 1 N$ b $end
+$var wire 1 O$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 P$ less $end
+$var wire 2 Q$ operation [1:0] $end
+$var wire 1 R$ tempb $end
+$var wire 1 S$ tempa $end
+$var wire 1 T$ temp $end
+$var wire 1 U$ carryOut $end
+$var reg 1 V$ result $end
+$scope module M0 $end
+$var wire 1 O$ carryIn $end
+$var wire 1 U$ carryOut $end
+$var wire 1 S$ input1 $end
+$var wire 1 R$ input2 $end
+$var wire 1 T$ sum $end
+$var wire 1 W$ w1 $end
+$var wire 1 X$ w2 $end
+$var wire 1 Y$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M29 $end
+$var wire 1 Z$ a $end
+$var wire 1 [$ addResult $end
+$var wire 1 \$ b $end
+$var wire 1 ]$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 ^$ less $end
+$var wire 2 _$ operation [1:0] $end
+$var wire 1 `$ tempb $end
+$var wire 1 a$ tempa $end
+$var wire 1 b$ temp $end
+$var wire 1 c$ carryOut $end
+$var reg 1 d$ result $end
+$scope module M0 $end
+$var wire 1 ]$ carryIn $end
+$var wire 1 c$ carryOut $end
+$var wire 1 a$ input1 $end
+$var wire 1 `$ input2 $end
+$var wire 1 b$ sum $end
+$var wire 1 e$ w1 $end
+$var wire 1 f$ w2 $end
+$var wire 1 g$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M3 $end
+$var wire 1 h$ a $end
+$var wire 1 i$ addResult $end
+$var wire 1 j$ b $end
+$var wire 1 k$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 l$ less $end
+$var wire 2 m$ operation [1:0] $end
+$var wire 1 n$ tempb $end
+$var wire 1 o$ tempa $end
+$var wire 1 p$ temp $end
+$var wire 1 q$ carryOut $end
+$var reg 1 r$ result $end
+$scope module M0 $end
+$var wire 1 k$ carryIn $end
+$var wire 1 q$ carryOut $end
+$var wire 1 o$ input1 $end
+$var wire 1 n$ input2 $end
+$var wire 1 p$ sum $end
+$var wire 1 s$ w1 $end
+$var wire 1 t$ w2 $end
+$var wire 1 u$ w3 $end
+$upscope $end
+$upscope $end
+$scope module M30 $end
+$var wire 1 v$ a $end
+$var wire 1 w$ addResult $end
+$var wire 1 x$ b $end
+$var wire 1 y$ carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 z$ less $end
+$var wire 2 {$ operation [1:0] $end
+$var wire 1 |$ tempb $end
+$var wire 1 }$ tempa $end
+$var wire 1 ~$ temp $end
+$var wire 1 !% carryOut $end
+$var reg 1 "% result $end
+$scope module M0 $end
+$var wire 1 y$ carryIn $end
+$var wire 1 !% carryOut $end
+$var wire 1 }$ input1 $end
+$var wire 1 |$ input2 $end
+$var wire 1 ~$ sum $end
+$var wire 1 #% w1 $end
+$var wire 1 $% w2 $end
+$var wire 1 %% w3 $end
+$upscope $end
+$upscope $end
+$scope module M31 $end
+$var wire 1 &% a $end
+$var wire 1 A addResult $end
+$var wire 1 '% b $end
+$var wire 1 (% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 )% less $end
+$var wire 2 *% operation [1:0] $end
+$var wire 1 +% tempb $end
+$var wire 1 ,% tempa $end
+$var wire 1 -% temp $end
+$var wire 1 .% carryOut $end
+$var reg 1 /% result $end
+$scope module M0 $end
+$var wire 1 (% carryIn $end
+$var wire 1 .% carryOut $end
+$var wire 1 ,% input1 $end
+$var wire 1 +% input2 $end
+$var wire 1 -% sum $end
+$var wire 1 0% w1 $end
+$var wire 1 1% w2 $end
+$var wire 1 2% w3 $end
+$upscope $end
+$upscope $end
+$scope module M4 $end
+$var wire 1 3% a $end
+$var wire 1 4% addResult $end
+$var wire 1 5% b $end
+$var wire 1 6% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 7% less $end
+$var wire 2 8% operation [1:0] $end
+$var wire 1 9% tempb $end
+$var wire 1 :% tempa $end
+$var wire 1 ;% temp $end
+$var wire 1 <% carryOut $end
+$var reg 1 =% result $end
+$scope module M0 $end
+$var wire 1 6% carryIn $end
+$var wire 1 <% carryOut $end
+$var wire 1 :% input1 $end
+$var wire 1 9% input2 $end
+$var wire 1 ;% sum $end
+$var wire 1 >% w1 $end
+$var wire 1 ?% w2 $end
+$var wire 1 @% w3 $end
+$upscope $end
+$upscope $end
+$scope module M5 $end
+$var wire 1 A% a $end
+$var wire 1 B% addResult $end
+$var wire 1 C% b $end
+$var wire 1 D% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 E% less $end
+$var wire 2 F% operation [1:0] $end
+$var wire 1 G% tempb $end
+$var wire 1 H% tempa $end
+$var wire 1 I% temp $end
+$var wire 1 J% carryOut $end
+$var reg 1 K% result $end
+$scope module M0 $end
+$var wire 1 D% carryIn $end
+$var wire 1 J% carryOut $end
+$var wire 1 H% input1 $end
+$var wire 1 G% input2 $end
+$var wire 1 I% sum $end
+$var wire 1 L% w1 $end
+$var wire 1 M% w2 $end
+$var wire 1 N% w3 $end
+$upscope $end
+$upscope $end
+$scope module M6 $end
+$var wire 1 O% a $end
+$var wire 1 P% addResult $end
+$var wire 1 Q% b $end
+$var wire 1 R% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 S% less $end
+$var wire 2 T% operation [1:0] $end
+$var wire 1 U% tempb $end
+$var wire 1 V% tempa $end
+$var wire 1 W% temp $end
+$var wire 1 X% carryOut $end
+$var reg 1 Y% result $end
+$scope module M0 $end
+$var wire 1 R% carryIn $end
+$var wire 1 X% carryOut $end
+$var wire 1 V% input1 $end
+$var wire 1 U% input2 $end
+$var wire 1 W% sum $end
+$var wire 1 Z% w1 $end
+$var wire 1 [% w2 $end
+$var wire 1 \% w3 $end
+$upscope $end
+$upscope $end
+$scope module M7 $end
+$var wire 1 ]% a $end
+$var wire 1 ^% addResult $end
+$var wire 1 _% b $end
+$var wire 1 `% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 a% less $end
+$var wire 2 b% operation [1:0] $end
+$var wire 1 c% tempb $end
+$var wire 1 d% tempa $end
+$var wire 1 e% temp $end
+$var wire 1 f% carryOut $end
+$var reg 1 g% result $end
+$scope module M0 $end
+$var wire 1 `% carryIn $end
+$var wire 1 f% carryOut $end
+$var wire 1 d% input1 $end
+$var wire 1 c% input2 $end
+$var wire 1 e% sum $end
+$var wire 1 h% w1 $end
+$var wire 1 i% w2 $end
+$var wire 1 j% w3 $end
+$upscope $end
+$upscope $end
+$scope module M8 $end
+$var wire 1 k% a $end
+$var wire 1 l% addResult $end
+$var wire 1 m% b $end
+$var wire 1 n% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 o% less $end
+$var wire 2 p% operation [1:0] $end
+$var wire 1 q% tempb $end
+$var wire 1 r% tempa $end
+$var wire 1 s% temp $end
+$var wire 1 t% carryOut $end
+$var reg 1 u% result $end
+$scope module M0 $end
+$var wire 1 n% carryIn $end
+$var wire 1 t% carryOut $end
+$var wire 1 r% input1 $end
+$var wire 1 q% input2 $end
+$var wire 1 s% sum $end
+$var wire 1 v% w1 $end
+$var wire 1 w% w2 $end
+$var wire 1 x% w3 $end
+$upscope $end
+$upscope $end
+$scope module M9 $end
+$var wire 1 y% a $end
+$var wire 1 z% addResult $end
+$var wire 1 {% b $end
+$var wire 1 |% carryIn $end
+$var wire 1 1 invertA $end
+$var wire 1 2 invertB $end
+$var wire 1 }% less $end
+$var wire 2 ~% operation [1:0] $end
+$var wire 1 !& tempb $end
+$var wire 1 "& tempa $end
+$var wire 1 #& temp $end
+$var wire 1 $& carryOut $end
+$var reg 1 %& result $end
+$scope module M0 $end
+$var wire 1 |% carryIn $end
+$var wire 1 $& carryOut $end
+$var wire 1 "& input1 $end
+$var wire 1 !& input2 $end
+$var wire 1 #& sum $end
+$var wire 1 && w1 $end
+$var wire 1 '& w2 $end
+$var wire 1 (& w3 $end
+$upscope $end
+$upscope $end
+$upscope $end
+$scope module shifter $end
+$var wire 1 3 leftRight $end
+$var wire 32 )& sftSrc [31:0] $end
+$var wire 5 *& shamt [4:0] $end
+$var reg 32 +& result [31:0] $end
+$var integer 32 ,& decimalShamt [31:0] $end
+$var integer 32 -& i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+1*
+b0 )
+b11 (
+1'
+b1 &
+b10 %
+$end
+#0
+$dumpvars
+bx -&
+bx ,&
+bx +&
+bx *&
+bx )&
+x(&
+x'&
+x&&
+x%&
+x$&
+x#&
+x"&
+x!&
+bx ~%
+0}%
+x|%
+x{%
+xz%
+xy%
+xx%
+xw%
+xv%
+xu%
+xt%
+xs%
+xr%
+xq%
+bx p%
+0o%
+xn%
+xm%
+xl%
+xk%
+xj%
+xi%
+xh%
+xg%
+xf%
+xe%
+xd%
+xc%
+bx b%
+0a%
+x`%
+x_%
+x^%
+x]%
+x\%
+x[%
+xZ%
+xY%
+xX%
+xW%
+xV%
+xU%
+bx T%
+0S%
+xR%
+xQ%
+xP%
+xO%
+xN%
+xM%
+xL%
+xK%
+xJ%
+xI%
+xH%
+xG%
+bx F%
+0E%
+xD%
+xC%
+xB%
+xA%
+x@%
+x?%
+x>%
+x=%
+x<%
+x;%
+x:%
+x9%
+bx 8%
+07%
+x6%
+x5%
+x4%
+x3%
+x2%
+x1%
+x0%
+x/%
+x.%
+x-%
+x,%
+x+%
+bx *%
+0)%
+x(%
+x'%
+x&%
+x%%
+x$%
+x#%
+x"%
+x!%
+x~$
+x}$
+x|$
+bx {$
+0z$
+xy$
+xx$
+xw$
+xv$
+xu$
+xt$
+xs$
+xr$
+xq$
+xp$
+xo$
+xn$
+bx m$
+0l$
+xk$
+xj$
+xi$
+xh$
+xg$
+xf$
+xe$
+xd$
+xc$
+xb$
+xa$
+x`$
+bx _$
+0^$
+x]$
+x\$
+x[$
+xZ$
+xY$
+xX$
+xW$
+xV$
+xU$
+xT$
+xS$
+xR$
+bx Q$
+0P$
+xO$
+xN$
+xM$
+xL$
+xK$
+xJ$
+xI$
+xH$
+xG$
+xF$
+xE$
+xD$
+bx C$
+0B$
+xA$
+x@$
+x?$
+x>$
+x=$
+x<$
+x;$
+x:$
+x9$
+x8$
+x7$
+x6$
+bx 5$
+04$
+x3$
+x2$
+x1$
+x0$
+x/$
+x.$
+x-$
+x,$
+x+$
+x*$
+x)$
+x($
+bx '$
+0&$
+x%$
+x$$
+x#$
+x"$
+x!$
+x~#
+x}#
+x|#
+x{#
+xz#
+xy#
+xx#
+bx w#
+0v#
+xu#
+xt#
+xs#
+xr#
+xq#
+xp#
+xo#
+xn#
+xm#
+xl#
+xk#
+xj#
+bx i#
+0h#
+xg#
+xf#
+xe#
+xd#
+xc#
+xb#
+xa#
+x`#
+x_#
+x^#
+x]#
+x\#
+bx [#
+0Z#
+xY#
+xX#
+xW#
+xV#
+xU#
+xT#
+xS#
+xR#
+xQ#
+xP#
+xO#
+xN#
+bx M#
+0L#
+xK#
+xJ#
+xI#
+xH#
+xG#
+xF#
+xE#
+xD#
+xC#
+xB#
+xA#
+x@#
+bx ?#
+0>#
+x=#
+x<#
+x;#
+x:#
+x9#
+x8#
+x7#
+x6#
+x5#
+x4#
+x3#
+x2#
+bx 1#
+00#
+x/#
+x.#
+x-#
+x,#
+x+#
+x*#
+x)#
+x(#
+x'#
+x&#
+x%#
+x$#
+bx ##
+0"#
+x!#
+x~"
+x}"
+x|"
+x{"
+xz"
+xy"
+xx"
+xw"
+xv"
+xu"
+xt"
+bx s"
+0r"
+xq"
+xp"
+xo"
+xn"
+xm"
+xl"
+xk"
+xj"
+xi"
+xh"
+xg"
+xf"
+bx e"
+0d"
+xc"
+xb"
+xa"
+x`"
+x_"
+x^"
+x]"
+x\"
+x["
+xZ"
+xY"
+xX"
+bx W"
+0V"
+xU"
+xT"
+xS"
+xR"
+xQ"
+xP"
+xO"
+xN"
+xM"
+xL"
+xK"
+xJ"
+bx I"
+0H"
+xG"
+xF"
+xE"
+xD"
+xC"
+xB"
+xA"
+x@"
+x?"
+x>"
+x="
+x<"
+bx ;"
+0:"
+x9"
+x8"
+x7"
+x6"
+x5"
+x4"
+x3"
+x2"
+x1"
+x0"
+x/"
+x."
+bx -"
+0,"
+x+"
+x*"
+x)"
+x("
+x'"
+x&"
+x%"
+x$"
+x#"
+x""
+x!"
+x~
+bx }
+0|
+x{
+xz
+xy
+xx
+xw
+xv
+xu
+xt
+xs
+xr
+xq
+xp
+bx o
+0n
+xm
+xl
+xk
+xj
+xi
+xh
+xg
+xf
+xe
+xd
+xc
+xb
+bx a
+0`
+x_
+x^
+x]
+x\
+x[
+xZ
+xY
+xX
+xW
+xV
+xU
+xT
+bx S
+0R
+xQ
+xP
+xO
+xN
+xM
+xL
+xK
+xJ
+xI
+xH
+xG
+xF
+bx E
+xD
+xC
+xB
+xA
+bx @
+bzxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx ?
+bx >
+bx =
+bx <
+b0 ;
+b0 :
+x9
+bx 8
+bx 7
+bx 6
+x5
+bx 4
+x3
+x2
+x1
+bx 0
+bx /
+bx .
+0-
+bx ,
+bx +
+x$
+bx #
+bx "
+x!
+$end
+#5000
+1-
+#10000
+b101000111111000100000111101011001010001111110001000001111010110010 0
+0-
+#15000
+0!
+0@"
+0N"
+0\"
+0j"
+0x"
+0D#
+0r$
+0R#
+0`#
+0d$
+0"%
+0=%
+0/%
+0g%
+0%&
+16#
+1t
+1$"
+12"
+07"
+0>"
+0E"
+0L"
+0S"
+0Z"
+0a"
+0h"
+0o"
+0v"
+1(#
+0;#
+0B#
+0i$
+0p$
+0I#
+0P#
+0W#
+0^#
+1n#
+1|#
+1,$
+1:$
+1H$
+1V$
+0[$
+0b$
+0w$
+0~$
+04%
+0;%
+1$
+0A
+0-%
+1K%
+1Y%
+0^%
+0e%
+1u%
+0z%
+0#&
+1f
+0X
+1-#
+14#
+1k
+1r
+1y
+1""
+1)"
+10"
+09"
+0G"
+0U"
+0c"
+0q"
+1}"
+1&#
+0=#
+0k$
+0K#
+0Y#
+1e#
+1l#
+1s#
+1z#
+1#$
+1*$
+11$
+18$
+1?$
+1F$
+1M$
+1T$
+0]$
+0y$
+06%
+0(%
+1B%
+1I%
+1P%
+1W%
+0`%
+1l%
+1s%
+0|%
+1]
+1d
+0O
+0V
+b11111100010000011110101100100 #
+b11111100010000011110101100100 @
+0J
+1/#
+1m
+1{
+1+"
+01"
+0?"
+0M"
+0["
+0i"
+1!#
+0'#
+05#
+0C#
+0Q#
+1g#
+1u#
+1%$
+13$
+1A$
+1O$
+0U$
+0c$
+0q$
+0!%
+1D%
+1R%
+0X%
+1n%
+0t%
+1_
+0Q
+0C
+0H
+0[
+1W
+0i
+1e
+0w
+1s
+0'"
+1#"
+05"
+0C"
+0Q"
+0_"
+0m"
+0{"
+1w"
+0+#
+09#
+0G#
+0U#
+0c#
+1_#
+0q#
+1m#
+0!$
+1{#
+0/$
+1+$
+0=$
+19$
+0K$
+1G$
+0Y$
+0g$
+0u$
+0%%
+02%
+1.%
+0@%
+1<%
+0N%
+1J%
+0\%
+0j%
+1f%
+0x%
+0(&
+1$&
+bz10001111110001000001111010110010 ?
+0I
+0K
+0L
+0Y
+1Z
+0g
+1h
+0u
+1v
+0%"
+1&"
+03"
+04"
+0A"
+0B"
+0O"
+0P"
+0]"
+0^"
+0k"
+0l"
+0y"
+1z"
+0)#
+0*#
+07#
+08#
+0E#
+0F#
+0S#
+0T#
+0a#
+1b#
+0o#
+1p#
+0}#
+1~#
+0-$
+1.$
+0;$
+1<$
+0I$
+1J$
+0W$
+0X$
+0e$
+0f$
+0s$
+0t$
+0#%
+0$%
+00%
+11%
+0>%
+1?%
+0L%
+1M%
+0Z%
+0[%
+0h%
+1i%
+0v%
+0w%
+0&&
+1'&
+b10001111110001 "
+b10001111110001 +&
+b100000 -&
+b10010 ,&
+0F
+0M
+1T
+1b
+1p
+1~
+0."
+0<"
+0J"
+0X"
+0f"
+1t"
+0$#
+02#
+0@#
+0N#
+1\#
+1j#
+1x#
+1($
+16$
+1D$
+0R$
+0`$
+0n$
+0|$
+1+%
+19%
+1G%
+0U%
+1c%
+0q%
+1!&
+0G
+1U
+1c
+1q
+1!"
+0/"
+0="
+0K"
+0Y"
+0g"
+1u"
+0%#
+03#
+0A#
+0O#
+1]#
+1k#
+1y#
+1)$
+17$
+1E$
+0S$
+0a$
+0o$
+0}$
+1,%
+1:%
+1H%
+0V%
+1d%
+0r%
+1"&
+0D
+1P
+0.#
+0j$
+15%
+1C%
+0Q%
+1_%
+0m%
+1{%
+1^
+1l
+1z
+0*"
+08"
+0F"
+0T"
+0b"
+1p"
+0~"
+0<#
+0J#
+1X#
+1f#
+1t#
+1$$
+12$
+1@$
+0N$
+0\$
+0x$
+1'%
+0B
+1N
+0,#
+0h$
+13%
+1A%
+0O%
+1]%
+0k%
+1y%
+1\
+1j
+1x
+0("
+06"
+0D"
+0R"
+0`"
+1n"
+0|"
+0:#
+0H#
+1V#
+1d#
+1r#
+1"$
+10$
+1>$
+0L$
+0Z$
+0v$
+1&%
+b10001111110001000001111010110010 7
+b10001111110001000001111010110010 )&
+b10010 8
+b10010 *&
+13
+b10 4
+b10 >
+b10 E
+b10 S
+b10 a
+b10 o
+b10 }
+b10 -"
+b10 ;"
+b10 I"
+b10 W"
+b10 e"
+b10 s"
+b10 ##
+b10 1#
+b10 ?#
+b10 M#
+b10 [#
+b10 i#
+b10 w#
+b10 '$
+b10 5$
+b10 C$
+b10 Q$
+b10 _$
+b10 m$
+b10 {$
+b10 *%
+b10 8%
+b10 F%
+b10 T%
+b10 b%
+b10 p%
+b10 ~%
+02
+01
+b10001111110001000001111010110010 /
+b10001111110001000001111010110010 =
+b10001111110001000001111010110010 .
+b10001111110001000001111010110010 <
+1-
+#20000
+b1100011111000001100110101011101111100111110000011001101010111011111 0
+b1 :
+b1 ;
+15
+09
+b11111100010000011110101100100 6
+b10001111110001000001111010110010 ,
+b10001111110001000001111010110010 +
+0-
+#25000
+1!
+0|#
+0s#
+0z#
+1!$
+0(#
+0n#
+0}"
+0&#
+1+#
+0e#
+0l#
+1q#
+0Y%
+1{"
+1c#
+0P%
+0W%
+1\%
+1q"
+1Y#
+06#
+1i"
+1Q#
+0K%
+0u%
+0-#
+04#
+19#
+1m"
+1U#
+12%
+0B%
+0I%
+1N%
+0l%
+0s%
+1x%
+0r$
+0%&
+0N"
+0d$
+0t
+1c"
+1K#
+0V$
+1(%
+0i$
+0p$
+0z%
+0#&
+0E"
+0L"
+0[$
+0b$
+0k
+0r
+1w
+1C"
+1["
+1C#
+0M$
+0T$
+1Y$
+1!%
+0@"
+0`#
+0/%
+1[
+19"
+1_"
+1G#
+1%%
+1@%
+0$
+1j%
+1M
+1u$
+1(&
+07"
+0>"
+1Q"
+0W#
+0^#
+1g$
+0A
+0-%
+1Q
+0X
+1/#
+0f
+1m
+1{
+0$"
+1+"
+02"
+11"
+1G"
+1U"
+0\"
+0j"
+0x"
+1!#
+1=#
+1k$
+0D#
+0R#
+1g#
+1u#
+1%$
+0,$
+13$
+0:$
+1A$
+0H$
+1O$
+1]$
+1y$
+16%
+0"%
+0=%
+1D%
+1R%
+1`%
+0g%
+1n%
+1|%
+1_
+1K
+17#
+1s$
+1L%
+1Z%
+1v%
+1&&
+1u
+1A"
+1O"
+1)#
+1a#
+1o#
+1}#
+1W$
+1e$
+10%
+1I
+0O
+0V
+1W
+0]
+0d
+1i
+1e
+1s
+0y
+0""
+1'"
+1#"
+0)"
+00"
+15"
+1?"
+1M"
+0S"
+0Z"
+0a"
+0h"
+0o"
+0v"
+1w"
+1'#
+15#
+0;#
+0B#
+0I#
+0P#
+1_#
+1m#
+1{#
+0#$
+0*$
+1/$
+1+$
+01$
+08$
+1=$
+19$
+0?$
+0F$
+1K$
+1G$
+1U$
+1c$
+1q$
+0w$
+0~$
+1.%
+04%
+0;%
+1<%
+1J%
+1X%
+0^%
+0e%
+1f%
+1t%
+bz11111111111111111111111111111111 ?
+1$&
+0L
+b0 #
+b0 @
+0J
+1Y
+0Z
+1g
+0h
+0v
+1%"
+0&"
+13"
+0B"
+0P"
+1]"
+1k"
+1y"
+0z"
+0*#
+08#
+1E#
+1S#
+0b#
+0p#
+0~#
+1-$
+0.$
+1;$
+0<$
+1I$
+0J$
+0X$
+0f$
+0t$
+1#%
+01%
+1>%
+0?%
+0M%
+0[%
+1h%
+0i%
+0w%
+0'&
+1G
+13#
+1o$
+0H%
+1V%
+1r%
+0"&
+0q
+1="
+1K"
+1%#
+0]#
+0k#
+0y#
+1S$
+1a$
+0,%
+b10000000000000000000000000000000 "
+b10000000000000000000000000000000 +&
+b11111 -&
+b11111 ,&
+0F
+0C
+0H
+0T
+0b
+1p
+0~
+1."
+0<"
+0J"
+1X"
+1f"
+0t"
+0$#
+02#
+1@#
+1N#
+1\#
+1j#
+1x#
+0($
+06$
+0D$
+0R$
+0`$
+0n$
+1|$
+1+%
+09%
+1G%
+0U%
+0c%
+0q%
+1!&
+1D
+1.#
+1j$
+0C%
+1Q%
+1m%
+0{%
+0l
+18"
+1F"
+1~"
+0X#
+0f#
+0t#
+1N$
+1\$
+0'%
+1B
+1,#
+1h$
+0A%
+1O%
+1k%
+0y%
+0j
+16"
+1D"
+1|"
+0V#
+0d#
+0r#
+1L$
+1Z$
+0&%
+b111110000011001101010111011111 7
+b111110000011001101010111011111 )&
+b11111 8
+b11111 *&
+03
+12
+b111110000011001101010111011111 /
+b111110000011001101010111011111 =
+b111110000011001101010111011111 .
+b111110000011001101010111011111 <
+1-
+#30000
+b11010110111111100010110111111100010000011110101100101000101111100 0
+b10 :
+b10 ;
+05
+19
+b0 6
+b11000001111100110010101000100000 ,
+b111110000011001101010111011111 +
+0-
+#35000
+0k$
+0{
+0y$
+0q"
+05#
+0s
+0c$
+0i"
+1-#
+14#
+09#
+1k
+1r
+0w
+1[$
+1b$
+0g$
+1a"
+1h"
+0m"
+1$
+0/#
+0m
+0U"
+0]$
+0!
+09"
+0c"
+0(%
+0W
+0e
+0M"
+0U$
+01"
+0["
+0!%
+0[
+1B%
+1I%
+0N%
+1]
+1d
+0i
+1E"
+1L"
+0Q"
+1;#
+1B#
+0G#
+1W#
+1^#
+0c#
+1e#
+1l#
+0q#
+1s#
+1z#
+0!$
+1M$
+1T$
+0Y$
+0A
+0-%
+02%
+0Q
+0y
+0""
+0'"
+1)"
+10"
+05"
+07"
+0>"
+0C"
+0S"
+0Z"
+0_"
+0o"
+0v"
+0{"
+0i$
+0p$
+0u$
+0w$
+0~$
+0%%
+14%
+1;%
+0@%
+1P%
+1W%
+0\%
+1l%
+1s%
+0x%
+0K
+0Y
+0L%
+1M%
+1K%
+0g
+0O"
+0E#
+1F#
+1D#
+0a#
+1b#
+1`#
+0o#
+1p#
+1n#
+0}#
+1~#
+1|#
+0W$
+00%
+11%
+1/%
+bz10001111111111000101001111111000 ?
+0I
+0%"
+1&"
+03"
+0A"
+1B"
+0]"
+0y"
+1z"
+0s$
+1t$
+0#%
+0>%
+1?%
+0Z%
+1[%
+0v%
+1w%
+0G
+0U
+03#
+1H%
+1"&
+0c
+1q
+0K"
+1A#
+1O#
+1]#
+1k#
+1y#
+0)$
+0S$
+1,%
+b10000011 "
+b10000011 +&
+b100000 -&
+b11000 ,&
+1$"
+1@"
+1x"
+06#
+0,$
+1r$
+1=%
+1Y%
+b10000001110101000101000101111000 #
+b10000001110101000101000101111000 @
+1u%
+0C
+0H
+0M
+0p
+1~
+0."
+1<"
+0X"
+1t"
+12#
+0N#
+1($
+1n$
+0|$
+19%
+1U%
+1q%
+0!&
+0D
+0P
+1C%
+0_%
+0^
+0F"
+1b"
+0~"
+1<#
+1X#
+1f#
+1t#
+02$
+0@$
+0N$
+0\$
+1'%
+0B
+0N
+0,#
+1A%
+1y%
+0\
+1j
+0D"
+1:#
+1H#
+1V#
+1d#
+1r#
+0"$
+0L$
+1&%
+b10000011110101100101000101111100 7
+b10000011110101100101000101111100 )&
+b11000 8
+b11000 *&
+13
+b1 4
+b1 >
+b1 E
+b1 S
+b1 a
+b1 o
+b1 }
+b1 -"
+b1 ;"
+b1 I"
+b1 W"
+b1 e"
+b1 s"
+b1 ##
+b1 1#
+b1 ?#
+b1 M#
+b1 [#
+b1 i#
+b1 w#
+b1 '$
+b1 5$
+b1 C$
+b1 Q$
+b1 _$
+b1 m$
+b1 {$
+b1 *%
+b1 8%
+b1 F%
+b1 T%
+b1 b%
+b1 p%
+b1 ~%
+02
+b10000011110101100101000101111100 /
+b10000011110101100101000101111100 =
+b10101101111111000101101111111000 .
+b10101101111111000101101111111000 <
+1-
+#40000
+b101100001010100010101010101011111111000001010101001011110110001 0
+b11 :
+b11 ;
+09
+b10000001110101000101000101111000 6
+b10000011110101100101000101111100 ,
+b10101101111111000101101111111000 +
+0-
+#45000
+1i$
+1p$
+1k$
+15#
+1l%
+1s%
+0-#
+04#
+19#
+1w$
+1~$
+0$
+1n%
+0=#
+0Y#
+1/#
+1y$
+1f%
+0S"
+0Z"
+0'#
+0Q#
+1W
+1c$
+0^%
+0e%
+1j%
+0U"
+1}"
+1&#
+0+#
+1I#
+1P#
+0U#
+0e#
+0l#
+03$
+1[
+04%
+0;%
+0s#
+0z#
+0A$
+0[$
+0b$
+1g$
+12%
+1`%
+0G"
+0M"
+0!#
+0K#
+0g#
+0+$
+1Q
+06%
+1R%
+1m
+0u#
+0%$
+09$
+1]$
+1(%
+0P%
+0W%
+1\%
+1X%
+17"
+1>"
+0?"
+1E"
+1L"
+0Q"
+1o"
+1v"
+0w"
+1;#
+1B#
+0G#
+0C#
+1W#
+1^#
+0c#
+0_#
+0#$
+0*$
+0/$
+0?$
+0F$
+0K$
+1I
+0O
+0V
+0q$
+0B%
+0I%
+1N%
+1J%
+1e
+1k
+1r
+0m#
+0{#
+01$
+08$
+0=$
+1U$
+1!%
+0A
+0-%
+bz11111000000000000001011111110111 ?
+1.%
+1Z%
+0[%
+1A"
+0B"
+1O"
+1N"
+1y"
+0z"
+1E#
+0F#
+1a#
+0b#
+0-$
+0I$
+1J$
+1L
+1J
+1Y
+1X
+0t$
+0r$
+1L%
+0M%
+1h
+1f
+0u
+0p#
+0n#
+0~#
+0|#
+0;$
+1X$
+1V$
+1$%
+1"%
+10%
+01%
+1F
+02#
+0n$
+0U%
+1c%
+1!&
+1b
+0<"
+1J"
+0t"
+1$#
+0@#
+1N#
+0\#
+0j#
+0x#
+0($
+1D$
+1R$
+1`$
+1|$
+1G
+1U
+13#
+0o$
+0H%
+0d%
+0"&
+1c
+0q
+0%#
+0O#
+0k#
+0y#
+07$
+1S$
+0a$
+1}$
+0,%
+b11011000100000000000000000000000 "
+b11011000100000000000000000000000 +&
+b10111 -&
+b10111 ,&
+0t
+1j"
+1(#
+16#
+1R#
+0,$
+0:$
+1H$
+1d$
+1g%
+b11111000011111101101011111110111 #
+b11111000011111101101011111110111 @
+1%&
+1D
+0.#
+0j$
+0Q%
+1_%
+1{%
+1^
+08"
+1F"
+0p"
+1~"
+0<#
+1J#
+0X#
+0f#
+0t#
+0$$
+1@$
+1N$
+1\$
+1x$
+1B
+1N
+1,#
+0h$
+0A%
+0]%
+0y%
+1\
+0j
+0|"
+0H#
+0d#
+0r#
+00$
+1L$
+0Z$
+1v$
+0&%
+b11111000001010101001011110110001 7
+b11111000001010101001011110110001 )&
+b10111 8
+b10111 *&
+03
+b0 4
+b0 >
+b0 E
+b0 S
+b0 a
+b0 o
+b0 }
+b0 -"
+b0 ;"
+b0 I"
+b0 W"
+b0 e"
+b0 s"
+b0 ##
+b0 1#
+b0 ?#
+b0 M#
+b0 [#
+b0 i#
+b0 w#
+b0 '$
+b0 5$
+b0 C$
+b0 Q$
+b0 _$
+b0 m$
+b0 {$
+b0 *%
+b0 8%
+b0 F%
+b0 T%
+b0 b%
+b0 p%
+b0 ~%
+b11111000001010101001011110110001 /
+b11111000001010101001011110110001 =
+b1011000010101000101010101010111 .
+b1011000010101000101010101010111 <
+1-
+#50000
+b11001000001111111111111111111111111111111111111111010000100101000001 0
+b100 :
+b100 ;
+b11111000011111101101011111110111 6
+b11111000001010101001011110110001 ,
+b1011000010101000101010101010111 +
+0-
+#55000
+0S"
+0Z"
+0l%
+0s%
+0k$
+0U"
+0n%
+05#
+0M"
+0f%
+1-#
+14#
+09#
+1E"
+1L"
+0Q"
+1^%
+1e%
+0j%
+1)"
+10"
+05"
+1M$
+1T$
+0Y$
+0A
+0-%
+0/#
+0G"
+0q"
+0y$
+0R%
+0_
+0`%
+1?$
+1F$
+14%
+1;%
+1y
+1""
+11$
+18$
+0W
+0?"
+0i"
+0c$
+0J%
+0$&
+0X%
+0.%
+1O
+1V
+0[
+0k
+0r
+17"
+1>"
+0C"
+1a"
+1h"
+0m"
+0s#
+0z#
+0#$
+0*$
+1[$
+1b$
+0g$
+0$
+1B%
+1I%
+0N%
+1z%
+1#&
+0(&
+0@%
+0P%
+0W%
+0\%
+1]
+1d
+0i
+0'"
+0o"
+0v"
+0;#
+0B#
+0W#
+0^#
+0=$
+1i$
+1p$
+0u$
+0}"
+0&#
+0I#
+0P#
+0K$
+1w$
+1~$
+0%%
+02%
+0Q
+0m
+0{
+0+"
+09"
+0c"
+0u#
+0%$
+03$
+0A$
+0O$
+0]$
+06%
+0(%
+0D%
+0|%
+1>%
+0Z%
+0Y%
+1g
+1%"
+0y"
+0x"
+0E#
+0D#
+0a#
+0`#
+1;$
+1s$
+13"
+0)#
+0(#
+0S#
+0R#
+1I$
+1W$
+1#%
+00%
+0/%
+0I
+0e
+0s
+0#"
+01"
+0["
+0m#
+0{#
+0+$
+09$
+0G$
+0U$
+0q$
+0!%
+0<%
+bz00000000000000000000000000000000 ?
+0t%
+0L
+0J
+0h
+1f
+0v
+0t
+0&"
+1$"
+04"
+12"
+0^"
+0\"
+0p#
+0n#
+0~#
+0|#
+0.$
+0,$
+0<$
+1:$
+0J$
+1H$
+0X$
+1V$
+0t$
+1r$
+0$%
+1"%
+0?%
+1=%
+0w%
+b1111100000000101111011010111110 #
+b1111100000000101111011010111110 @
+0u%
+b1 "
+b1 +&
+b100000 -&
+b11111 ,&
+0F
+1C
+1H
+1T
+1b
+0p
+1~
+1."
+1<"
+1J"
+0X"
+1f"
+0t"
+0$#
+12#
+0@#
+0N#
+0\#
+0j#
+0x#
+0($
+06$
+0D$
+0R$
+0`$
+1n$
+0|$
+0+%
+19%
+1G%
+0U%
+1c%
+0q%
+1!&
+0G
+0U
+0c
+0q
+0!"
+0/"
+0="
+0K"
+0Y"
+0g"
+0u"
+0%#
+03#
+0A#
+0O#
+0]#
+0k#
+0y#
+0)$
+17$
+1E$
+1S$
+1a$
+0o$
+1}$
+0,%
+0:%
+0H%
+0V%
+0d%
+0r%
+0"&
+05%
+0C%
+1Q%
+0_%
+0{%
+0^
+1l
+0z
+0F"
+1T"
+0b"
+1p"
+1<#
+1X#
+1f#
+1t#
+1$$
+12$
+1h$
+1A%
+1]%
+1y%
+1j
+1("
+1D"
+1R"
+1`"
+1|"
+1H#
+1d#
+1r#
+1"$
+0>$
+0L$
+0v$
+1&%
+b11111111111111010000100101000001 7
+b11111111111111010000100101000001 )&
+b11111 8
+b11111 *&
+13
+12
+11
+b11111111111111010000100101000001 /
+b11111111111111010000100101000001 =
+b10000011111111111111111111111111 .
+b10000011111111111111111111111111 <
+1-
+#60000
+b11011001001111101101010110111111101110010011111011010101101111111011 0
+b101 :
+b101 ;
+b1111100000000101111011010111110 6
+b101111011010111110 ,
+b1111100000000000000000000000000 +
+0-
+#65000
+1$
+1A
+1-%
+1k
+1r
+1S"
+1Z"
+1o"
+1v"
+1I#
+1P#
+1A$
+1O$
+1y$
+1(%
+1k$
+1m
+19"
+1U"
+1q"
+1K#
+0!
+0O
+0V
+1i$
+1p$
+04%
+0;%
+0B%
+0I%
+0^%
+0e%
+0z%
+0#&
+0y
+0""
+17"
+1>"
+01$
+08$
+19$
+1?$
+1F$
+1G$
+0[$
+0b$
+1c$
+1w$
+1~$
+1!%
+0-#
+04#
+15#
+0]
+0d
+1e
+0)"
+00"
+11"
+0E"
+0L"
+1M"
+0a"
+0h"
+1i"
+bz01101100000100101010010000000100 ?
+1C#
+1M$
+1T$
+0Y
+0s$
+0>%
+0L%
+0h%
+0&&
+0%"
+0A"
+0;$
+1<$
+0I$
+1J$
+0e$
+1f$
+0#%
+1$%
+07#
+18#
+0g
+1h
+03"
+14"
+0O"
+1P"
+0k"
+1l"
+1F#
+1D#
+0W$
+0T
+0n$
+09%
+0G%
+0c%
+0!&
+0~
+0<"
+1@#
+16$
+1D$
+1`$
+1|$
+13#
+1c
+1/"
+1K"
+1g"
+1A#
+0S$
+b10010 "
+b10010 +&
+b100000 -&
+b11011 ,&
+0X
+1f
+0$"
+12"
+0@"
+1N"
+1j"
+16#
+1:$
+1H$
+0V$
+1d$
+0r$
+1"%
+0=%
+0K%
+0g%
+b1101100000100101010010000000100 #
+b1101100000100101010010000000100 @
+0%&
+1P
+1j$
+15%
+1C%
+1_%
+1{%
+1z
+18"
+0<#
+02$
+0@$
+0\$
+0x$
+0,#
+0\
+0("
+0D"
+0`"
+0:#
+1L$
+b10010011111011010101101111111011 7
+b10010011111011010101101111111011 )&
+b11011 8
+b11011 *&
+b1 4
+b1 >
+b1 E
+b1 S
+b1 a
+b1 o
+b1 }
+b1 -"
+b1 ;"
+b1 I"
+b1 W"
+b1 e"
+b1 s"
+b1 ##
+b1 1#
+b1 ?#
+b1 M#
+b1 [#
+b1 i#
+b1 w#
+b1 '$
+b1 5$
+b1 C$
+b1 Q$
+b1 _$
+b1 m$
+b1 {$
+b1 *%
+b1 8%
+b1 F%
+b1 T%
+b1 b%
+b1 p%
+b1 ~%
+b10010011111011010101101111111011 /
+b10010011111011010101101111111011 =
+b10010011111011010101101111111011 .
+b10010011111011010101101111111011 <
+1-
+#70000
+b1110010110011110011101001111110111000101100111100111010011111100111 0
+b110 :
+b110 ;
+b1101100000100101010010000000100 6
+b1101100000100101010010000000100 ,
+b1101100000100101010010000000100 +
+0-
+#75000
+1i
+1_
+1$&
+1(&
+1|%
+1t%
+1=$
+1x%
+13$
+1n%
+1+$
+1f%
+1/$
+1j%
+1%$
+1`%
+1{#
+1X%
+1!$
+1\%
+1u#
+1R%
+1!
+15"
+1G#
+1m#
+1J%
+1+"
+1=#
+1q#
+1N%
+1#"
+1'#
+1g#
+1D%
+1'"
+1Q"
+1+#
+1g$
+1_#
+1<%
+1.%
+1{
+1G"
+1!#
+1]$
+1m"
+1c#
+1@%
+0A
+0-%
+12%
+0k$
+1m
+1s
+19"
+1?"
+1U"
+1q"
+1w"
+1K#
+1A$
+1O$
+1U$
+1y$
+1c"
+1Y#
+16%
+0$
+1-#
+14#
+05#
+04%
+0;%
+0]
+0d
+1e
+0k
+0r
+1w
+0y
+0""
+0)"
+00"
+11"
+07"
+0>"
+1C"
+0E"
+0L"
+1M"
+0a"
+0h"
+1i"
+0o"
+0v"
+1{"
+0}"
+0&#
+0;#
+0B#
+1C#
+0s#
+0z#
+0#$
+0*$
+01$
+08$
+19$
+0?$
+0F$
+1K$
+1G$
+0M$
+0T$
+1Y$
+0[$
+0b$
+1c$
+1["
+1Q#
+1q$
+1(%
+17#
+08#
+1t$
+1>%
+1g
+0h
+1u
+1%"
+13"
+04"
+1A"
+1O"
+0P"
+1k"
+0l"
+1y"
+1)#
+1E#
+0F#
+1}#
+1-$
+1;$
+0<$
+1I$
+0J$
+1W$
+1e$
+0f$
+10%
+1O
+1V
+0S"
+0Z"
+1_"
+0I#
+0P#
+1U#
+0W#
+0^#
+0e#
+0l#
+0i$
+0p$
+0u$
+0w$
+0~$
+1%%
+bz11111111111111111111111111111000 ?
+1!%
+0B%
+0I%
+0P%
+0W%
+0^%
+0e%
+0l%
+0s%
+0z%
+0#&
+02#
+1n$
+19%
+0b
+1p
+1~
+0."
+1<"
+0J"
+0f"
+1t"
+1$#
+0@#
+1x#
+1($
+06$
+0D$
+1R$
+0`$
+1+%
+1Y
+1]"
+1S#
+1a#
+1o#
+0s$
+1#%
+0$%
+1L%
+1Z%
+1h%
+1v%
+1&&
+b1011001111001110 "
+b1011001111001110 +&
+b100000 -&
+b1110 ,&
+0J
+0f
+02"
+0N"
+0j"
+06#
+0D#
+0:$
+0H$
+0d$
+b0 #
+b0 @
+0"%
+1U
+1Y"
+1O#
+1]#
+1k#
+1o$
+0}$
+1H%
+1V%
+1d%
+1r%
+1"&
+1.#
+0j$
+05%
+1^
+0l
+0z
+1*"
+08"
+1F"
+1b"
+0p"
+0~"
+1<#
+0t#
+0$$
+12$
+1@$
+0N$
+1\$
+0'%
+0B
+1,#
+03%
+1\
+0j
+0x
+1("
+06"
+1D"
+1`"
+0n"
+0|"
+1:#
+0r#
+0"$
+10$
+1>$
+0L$
+1Z$
+0&%
+b101100111100111010011111100111 7
+b101100111100111010011111100111 )&
+b1110 8
+b1110 *&
+b11 4
+b11 >
+b11 E
+b11 S
+b11 a
+b11 o
+b11 }
+b11 -"
+b11 ;"
+b11 I"
+b11 W"
+b11 e"
+b11 s"
+b11 ##
+b11 1#
+b11 ?#
+b11 M#
+b11 [#
+b11 i#
+b11 w#
+b11 '$
+b11 5$
+b11 C$
+b11 Q$
+b11 _$
+b11 m$
+b11 {$
+b11 *%
+b11 8%
+b11 F%
+b11 T%
+b11 b%
+b11 p%
+b11 ~%
+01
+b101100111100111010011111100111 /
+b101100111100111010011111100111 =
+b101100111100111010011111101110 .
+b101100111100111010011111101110 <
+1-
+#80000
+b101110100101100010011000001110010010 0
+b111 :
+b111 ;
+19
+b0 6
+b11010011000011000101100000011000 ,
+b101100111100111010011111101110 +
+0-
+#85000
+0_
+0$&
+1z%
+1#&
+0(&
+0|%
+0%$
+0c"
+0t%
+0{#
+0["
+1l%
+1s%
+0x%
+1s#
+1z#
+0!$
+1S"
+1Z"
+0_"
+0n%
+0u#
+0U"
+0=#
+0A$
+0y$
+0f%
+0m#
+0M"
+0'#
+09$
+0c$
+0D%
+0.%
+1^%
+1e%
+0j%
+1e#
+1l#
+0q#
+1E"
+1L"
+0Q"
+1}"
+1&#
+0+#
+11$
+18$
+0=$
+1[$
+1b$
+0g$
+0<%
+0$
+1A
+1-%
+02%
+0R%
+0`%
+0m
+09"
+0q"
+0K#
+0Y#
+0g#
+0O$
+0!
+0{
+0+"
+0G"
+0!#
+03$
+0]$
+14%
+1;%
+0@%
+0(%
+0J%
+0X%
+0e
+01"
+0i"
+0C#
+0Q#
+0_#
+0G$
+1/#
+0s
+0#"
+0?"
+0w"
+0+$
+0U$
+06%
+0!%
+1-#
+14#
+0B%
+0I%
+0N%
+0P%
+0W%
+0\%
+0]
+0d
+0i
+0)"
+00"
+05"
+0a"
+0h"
+0m"
+0;#
+0B#
+0G#
+0I#
+0P#
+0U#
+0W#
+0^#
+0c#
+0?$
+0F$
+0K$
+0O
+0V
+1W
+0k
+0r
+0w
+0y
+0""
+0'"
+07"
+0>"
+0C"
+0o"
+0v"
+0{"
+0#$
+0*$
+0/$
+0M$
+0T$
+0Y$
+1i$
+1p$
+bz00000000000000000000000000000010 ?
+0q$
+0w$
+0~$
+0%%
+1K
+1J
+07#
+0L%
+0Z%
+0g
+03"
+0k"
+0E#
+0S#
+0a#
+0I$
+0Y
+1Z
+0u
+0%"
+0A"
+0y"
+0-$
+0W$
+1s$
+0t$
+0#%
+1G
+03#
+0H%
+0V%
+0d%
+0r%
+0"&
+0c
+0/"
+0K"
+0Y"
+0g"
+0A#
+0O#
+0]#
+0k#
+07$
+0E$
+0a$
+b1001100000111001001000000000000 "
+b1001100000111001001000000000000 +&
+b1011 -&
+b1011 ,&
+1X
+0f
+02"
+1N"
+1\"
+0j"
+1(#
+06#
+0D#
+0R#
+0`#
+1n#
+1|#
+1:$
+0H$
+1d$
+1r$
+1/%
+1=%
+0K%
+0Y%
+1g%
+1u%
+b10100101100010011000001110011011 #
+b10100101100010011000001110011011 @
+1%&
+1C
+1H
+1T
+0p
+0~
+0<"
+1J"
+1X"
+0t"
+1j#
+0($
+16$
+0R$
+1`$
+0n$
+0|$
+1c%
+1q%
+1!&
+0D
+0.#
+15%
+0C%
+0Q%
+0^
+0*"
+0b"
+1~"
+0<#
+0J#
+0X#
+1t#
+0@$
+1'%
+1B
+0,#
+0A%
+0O%
+0]%
+0k%
+0y%
+0\
+0("
+0D"
+0R"
+0`"
+0:#
+0H#
+0V#
+0d#
+00$
+0>$
+0Z$
+b10100101100010011000001110010010 7
+b10100101100010011000001110010010 )&
+b1011 8
+b1011 *&
+03
+b0 4
+b0 >
+b0 E
+b0 S
+b0 a
+b0 o
+b0 }
+b0 -"
+b0 ;"
+b0 I"
+b0 W"
+b0 e"
+b0 s"
+b0 ##
+b0 1#
+b0 ?#
+b0 M#
+b0 [#
+b0 i#
+b0 w#
+b0 '$
+b0 5$
+b0 C$
+b0 Q$
+b0 _$
+b0 m$
+b0 {$
+b0 *%
+b0 8%
+b0 F%
+b0 T%
+b0 b%
+b0 p%
+b0 ~%
+02
+b10100101100010011000001110010010 /
+b10100101100010011000001110010010 =
+b1011 .
+b1011 <
+1-
+#90000
+b10101100100101111010011010100011111010 0
+b1000 :
+b1000 ;
+b1001100000111001001000000000000 6
+0-
+#95000
+1n%
+1f%
+1B%
+1I%
+0^%
+0e%
+1j%
+1D%
+1`%
+1<%
+1X%
+04%
+0;%
+1@%
+1\%
+16%
+1R%
+0i$
+0p$
+1q$
+0P%
+0W%
+1l%
+1s%
+0z%
+0#&
+1k
+1r
+1)"
+10"
+1I#
+1P#
+1W#
+1^#
+0A
+0-%
+bz00000000000000000000000011111010 ?
+1J%
+0s$
+1t$
+1Z%
+1Y%
+0v%
+0u%
+0&&
+0%&
+1u
+1t
+13"
+12"
+1S#
+1R#
+1a#
+1`#
+00%
+0/%
+1M%
+b100101111010011010100011111011 #
+b100101111010011010100011111011 @
+1K%
+1n$
+1G%
+1U%
+0q%
+0!&
+1p
+1."
+1N#
+1\#
+0+%
+1H%
+b1001011110100110101 "
+b1001011110100110101 +&
+b100000 -&
+1j$
+1C%
+1Q%
+0m%
+0{%
+1l
+1*"
+1J#
+1X#
+0'%
+1A%
+b100101111010011010100011111010 7
+b100101111010011010100011111010 )&
+13
+b100101111010011010100011111010 /
+b100101111010011010100011111010 =
+b101011 .
+b101011 <
+1-
+#100000
+b1001 :
+b1001 ;
+b1001011110100110101 6
+0-
